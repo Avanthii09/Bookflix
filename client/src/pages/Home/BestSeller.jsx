@@ -29,7 +29,7 @@ const BestSeller = () => {
 
     useEffect(() => {
         // Use axios to fetch data from the backend API
-        axios.get('https://bookflix-server.vercel.app/api/all-books')
+        axios.get('bookflix-server.vercel.app/api/all-books')
             .then(response => {
                 // Update the state with the fetched data
                 setBooks(response.data.slice(0, 8));
